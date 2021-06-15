@@ -1,0 +1,19 @@
+.breadcrumbs {
+    margin-bottom: 16px;
+}
+
+.breadcrumbs__lista {
+    display: flex;
+
+    @include for-phone-only {
+        justify-content: center;
+    }
+
+    &__separator {
+        margin-left: 8px;
+        margin-right: 8px;
+        user-select: none;
+    }
+
+}
+    
