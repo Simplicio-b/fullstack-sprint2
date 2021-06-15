@@ -1,18 +1,44 @@
-/* Error: Undefined mixin.
- *   ,
- * 6 | /     @include for-phone-only {
- * 7 | |       display: none;
- * 8 | \     }
- *   '
- *   scss\base\base.scss 6:5  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Undefined mixin.\a   \2577 \a 6 \2502  \250c      @include for-phone-only {\a 7 \2502  \2502        display: none;\a 8 \2502  \2514      }\a   \2575 \a   scss\\base\\base.scss 6:5  root stylesheet";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&display=swap");
+html {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
+html a {
+  text-decoration: none;
+  color: inherit;
+}
+html input {
+  outline: none;
+}
+
+.item {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #585858;
+}
+@media (max-width: 1200px) {
+  .item {
+    display: none;
+  }
+}
+.item:not(:last-child):hover {
+  text-decoration: underline;
+}
+.item--active {
+  color: #261e1e;
+}
+@media (max-width: 1200px) {
+  .item--active {
+    display: block;
+    text-align: center;
+    font-size: 1.4375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+/*# sourceMappingURL=base.css.map */

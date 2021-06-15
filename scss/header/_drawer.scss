@@ -1,0 +1,16 @@
+.drawer {
+    width: 24px;
+    opacity: 54%;
+    display: none;
+
+    &__title {
+      text-transform: lowercase;
+      font-size: 0.5625rem;
+      font-weight: 400;
+      line-height: 0;
+    }
+
+    &-active {
+      display: block;
+    }
+}

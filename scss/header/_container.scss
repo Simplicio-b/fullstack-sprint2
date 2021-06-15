@@ -1,0 +1,28 @@
+.header__container {
+    margin: auto;
+    width: 95%;
+    max-width:container 1200px;
+    
+    // .mobile
+    &--mobile:first-child {
+      display: none;
+      margin-bottom: 25px;
+    
+      @include for-phone-only {
+        display: flex;
+        align-items: center;
+      }
+    
+    }
+    
+    // .desktop
+    &--desktop:nth-child(2) {
+    
+      @include for-phone-only {
+        display: none;
+      }
+    
+    }
+    
+}
+    

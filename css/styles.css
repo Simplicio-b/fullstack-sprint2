@@ -37,6 +37,67 @@ html input {
   }
 }
 
+.hide {
+  display: none;
+}
+
+.logo {
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .logo {
+    flex-grow: 1;
+  }
+}
+.logo__imagem {
+  height: 25px;
+  transform: translateY(10px);
+}
+
+.header__container {
+  margin: auto;
+  width: 95%;
+  max-width: container 1200px;
+}
+.header__container--mobile:first-child {
+  display: none;
+  margin-bottom: 25px;
+}
+@media (max-width: 1200px) {
+  .header__container--mobile:first-child {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 1200px) {
+  .header__container--desktop:nth-child(2) {
+    display: none;
+  }
+}
+
+.drawer {
+  width: 24px;
+  opacity: 54%;
+  display: none;
+}
+.drawer__title {
+  text-transform: lowercase;
+  font-size: 0.5625rem;
+  font-weight: 400;
+  line-height: 0;
+}
+.drawer-active {
+  display: block;
+}
+
+.header {
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+  width: 100%;
+}
+
 .search__imagem {
   color: rgba(0, 0, 0, 0.26);
   line-height: 40px;
@@ -90,78 +151,6 @@ html input {
 @media (max-width: 1200px) {
   .menu {
     display: none;
-  }
-}
-
-.hide {
-  display: none;
-}
-
-.header {
-  width: 100%;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #e0e0e0;
-}
-.header > div {
-  margin: auto;
-  width: 95%;
-  max-width: container 1200px;
-}
-.header > div > div:first-child {
-  display: none;
-  margin-bottom: 25px;
-}
-@media (max-width: 1200px) {
-  .header > div > div:first-child {
-    display: flex;
-    align-items: center;
-  }
-}
-@media (max-width: 1200px) {
-  .header > div > div:nth-child(2) {
-    display: none;
-  }
-}
-.header h1.logo {
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-}
-@media (max-width: 1200px) {
-  .header h1.logo {
-    flex-grow: 1;
-  }
-}
-.header h1.logo img.img {
-  height: 25px;
-  transform: translateY(10px);
-}
-.header .drawer {
-  width: 24px;
-  opacity: 54%;
-  display: none;
-}
-.header .drawer .title {
-  text-transform: lowercase;
-  font-size: 0.5625rem;
-  font-weight: 400;
-  line-height: 0;
-}
-.header .drawer-closed > img {
-  background: url(../assets/close.svg) no-repeat;
-  background-size: contain;
-}
-.header .drawer-closed .title:after {
-  content: "fechar";
-}
-.header .drawer-active {
-  display: block;
-}
-@media (max-width: 1200px) {
-  .header .floating {
-    position: fixed;
-    top: 0;
-    background-color: #fff;
   }
 }
 
