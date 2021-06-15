@@ -1,0 +1,13 @@
+.menu__link {
+    color: #000;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    vertical-align: baseline;
+
+    &:hover {
+      border-bottom: 2px solid #000;
+    }
+}
+

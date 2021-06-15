@@ -20,7 +20,7 @@ html {
 }
 
 // styles
-@import 'search/search.scss';
+@import 'base/base.scss', 'search/search.scss', 'menu/menu.scss';
 
 .hide {
   display: none;
@@ -105,40 +105,11 @@ html {
     display: block;
   }
 
-
   .floating {
     @include for-phone-only {
       position: fixed;
       top: 0;
       background-color: #fff;
-    }
-  }
-
-
-  div.menu {
-
-    @include for-phone-only {
-      display: none;
-    }
-
-    .list {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 10px;
-      margin-bottom: 10px;
-    }
-
-    .link {
-      font-size: 0.8125rem;
-      font-weight: 600;
-      color: #000;
-      text-transform: uppercase;
-      padding-bottom: 5px;
-      vertical-align: baseline;
-
-      &:hover {
-        border-bottom: 2px solid #000;
-      }
     }
   }
 }
@@ -161,33 +132,6 @@ html {
 
       @include for-phone-only {
         justify-content: center;
-      }
-
-      .item {
-
-        font-size: 0.8125rem;
-        font-weight: 600;
-        color: #585858;
-  
-        @include for-phone-only {
-          display: none;
-        }
-    
-        &:not(:last-child):hover {
-          text-decoration: underline;
-        }
-  
-        &--active {
-          color: #261e1e;
-          @include for-phone-only {
-            display: block;
-            text-align: center;
-            font-size: 1.4375rem;
-            font-weight: 400;
-            text-transform: uppercase;
-  
-          }
-        }
       }
 
       .separator {
