@@ -1,0 +1,21 @@
+.footer__payment {
+  display: flex;
+  margin-bottom: 25px;
+  margin-top: 25px;
+    
+  &__alternatives {
+    
+    width: 50%;
+    
+    &__title {
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    
+    &__image {
+      margin: 2px;
+      width: auto;
+    }
+    
+  }
+} 

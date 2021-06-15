@@ -1,0 +1,23 @@
+.footer__apps {
+  
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  
+    &__mensagem {
+      font-size: 0.9375rem;
+      font-weight: 600;
+      margin-right: 20px;
+      text-transform: uppercase;
+    }  
+}
+
+.footer__app {
+  
+    margin-left: 10px;
+
+    &__imagem {
+        width: 110px;
+    }
+
+}

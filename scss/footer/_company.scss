@@ -1,0 +1,34 @@
+.footer__companies {
+    display: flex;
+    padding: 50px;
+    width: 60%;
+}
+ 
+.company-links {
+    flex-grow: 1;
+    margin-left: 8px;
+    margin-right: 8px;
+
+    .item {
+      padding-top: 8px;
+    
+      .title {
+        text-transform: uppercase;
+        font-size: 0.875rem;
+      }
+
+      .text {
+        line-height: 25px;
+        font-size: 0.6875rem;
+        font-weight: 400;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+      }
+
+    }
+
+}
+  

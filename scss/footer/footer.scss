@@ -1,0 +1,93 @@
+@import 'container', 'contact', 'apps', 'links', 'company', 'payment', 'social', 'accessibility';
+
+.footer {
+
+    border-top: 2px solid lightgray;
+  
+    padding-top: 40px;
+    width: 100%;
+
+    // inicio bottom
+    .bottom {
+  
+      background-color: #f6f6f6;
+      padding: 20px 0;
+  
+      .container {
+        display: flex;
+      }
+  
+      .copyright {
+        width: 83.333333%;
+    
+        .text {
+          font-size: 0.5625rem;
+          font-weight: 400;
+          color: #261E1E;
+        }
+  
+      }
+  
+      .stamp {
+        margin: 0 auto;
+        width: 47px;
+      }
+  
+    } // fim bottom
+ 
+    &__col {
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    &__info {
+        font-size: 0.8125rem;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+  
+    &__input {
+        border: 0px;
+        border-bottom: 1px solid rgba(38, 30, 30, 0.42);
+        color: #000;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        height: 24px;
+        line-height: 24px;
+        outline: none;
+        width: 300px;
+        
+        &:hover {
+          border-bottom: 2px solid #261E1E;
+        }
+  
+        &:focus-within {
+          border-bottom: 2px solid #261E1E;
+        }
+  
+        &::placeholder {
+          font-style: italic;
+          font-weight: 600;
+          opacity: 42%;
+        }
+    }
+  
+    &__btn {
+        background-color: rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 4px;
+        box-shadow: none;
+        color: rgba(0, 0, 0, 0.26);
+        margin-left: 20px;
+        padding: 10px 20px 10px 20px;
+        
+        .txt {
+          font-size: 0.8125rem;
+          text-transform: uppercase;
+        }
+    }
+} 
+  

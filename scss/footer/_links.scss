@@ -1,0 +1,34 @@
+.footer__links {
+    background-color: #f6f6f6;
+    display: flex;
+    margin-top: 40px;
+  
+    &__contacts {
+        display: flex;
+        width: 30%;
+    }
+
+    &__contact-icon {
+        text-align: center;
+
+        &__img {
+            display:block;
+            margin:auto;
+            width: 25px;
+        }
+
+        &__text {
+            font-size: 0.8125rem;
+            padding: 8px;
+            white-space: pre-line;
+        }
+
+    }
+  
+    &__separator {
+        background-color: rgba(0, 0, 0, 0.12);
+        border: none;
+        width: 1px;
+    }
+}
+  
