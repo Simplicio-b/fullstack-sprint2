@@ -1,4 +1,13 @@
-@import 'container', 'contact', 'apps', 'links', 'company', 'payment', 'social', 'accessibility';
+@import 
+  'container', 
+  'contact', 
+  'apps', 'links', 
+  'company', 
+  'payment', 
+  'social', 
+  'accessibility', 
+  'bottom'
+;
 
 .footer {
 
@@ -7,34 +16,6 @@
     padding-top: 40px;
     width: 100%;
 
-    // inicio bottom
-    .bottom {
-  
-      background-color: #f6f6f6;
-      padding: 20px 0;
-  
-      .container {
-        display: flex;
-      }
-  
-      .copyright {
-        width: 83.333333%;
-    
-        .text {
-          font-size: 0.5625rem;
-          font-weight: 400;
-          color: #261E1E;
-        }
-  
-      }
-  
-      .stamp {
-        margin: 0 auto;
-        width: 47px;
-      }
-  
-    } // fim bottom
- 
     &__col {
         display: flex;
         flex-grow: 1;
