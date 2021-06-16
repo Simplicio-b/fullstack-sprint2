@@ -1,5 +1,11 @@
 .breadcrumbs {
     margin-bottom: 16px;
+
+    &__separator {
+        margin-left: 8px;
+        margin-right: 8px;
+        user-select: none;
+    }
 }
 
 .breadcrumbs__lista {
@@ -8,12 +14,5 @@
     @include for-phone-only {
         justify-content: center;
     }
-
-    &__separator {
-        margin-left: 8px;
-        margin-right: 8px;
-        user-select: none;
-    }
-
 }
     

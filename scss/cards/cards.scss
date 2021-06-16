@@ -1,0 +1,7 @@
+@import 'card';
+
+.cards {
+    @include for-phone-only {
+      flex-basis: 50%;
+    }
+}

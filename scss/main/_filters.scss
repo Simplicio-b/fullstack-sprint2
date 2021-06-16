@@ -5,11 +5,11 @@
     @include for-phone-only {
       display: none;
     }
-} 
 
-.filters__lista {
-    display: flex;
-  
+    &__lista {
+      display: flex;
+    }
+
     &__item {
       display: flex;
       align-items: center;
@@ -21,18 +21,18 @@
       }
   
     }
-  
+
     &__label {
       text-transform: uppercase;
       font-size: 0.6875rem;
       font-weight: 400;
       color: #261e1e;;
     }
-  
+
     &__icone {
       height: 20px;
       margin-left: 8px;
     }
-  
-  }
+} 
+
     
