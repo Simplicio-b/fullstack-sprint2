@@ -1,4 +1,4 @@
-.footer__links {
+.links {
     background-color: #f6f6f6;
     display: flex;
     margin-top: 40px;
@@ -11,13 +11,13 @@
     &__contact-icon {
         text-align: center;
 
-        &__img {
+        &--img {
             display:block;
             margin:auto;
             width: 25px;
         }
 
-        &__text {
+        &--text {
             font-size: 0.8125rem;
             padding: 8px;
             white-space: pre-line;

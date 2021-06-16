@@ -1,5 +1,54 @@
-.footer__contact {
+.contact {
     align-items: center;
     display: flex;
     justify-content: space-between;
+
+    
+    &__info {
+        font-size: 0.8125rem;
+        height: 50px;
+        line-height: 50px;
+        text-transform: uppercase;
+    }
+  
+    &__input {
+        border: 0px;
+        border-bottom: 1px solid rgba(38, 30, 30, 0.42);
+        color: #000;
+        font-size: 0.9375rem;
+        font-weight: 600;
+        height: 24px;
+        line-height: 24px;
+        outline: none;
+        width: 300px;
+        
+        &:hover {
+          border-bottom: 2px solid #261E1E;
+        }
+  
+        &:focus-within {
+          border-bottom: 2px solid #261E1E;
+        }
+  
+        &::placeholder {
+          font-style: italic;
+          font-weight: 600;
+          opacity: 42%;
+        }
+    }
+  
+    &__btn {
+        background-color: rgba(0, 0, 0, 0.12);
+        border: none;
+        border-radius: 4px;
+        box-shadow: none;
+        color: rgba(0, 0, 0, 0.26);
+        margin-left: 20px;
+        padding: 10px 20px 10px 20px;
+        
+        .txt {
+          font-size: 0.8125rem;
+          text-transform: uppercase;
+        }
+    }
 }
